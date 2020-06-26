@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
+import { Property } from '../property/models/index';
+import { PROPERTIES } from './services/mock-property';
 
 @Component({
   selector: 'app-property',
@@ -7,7 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PropertyComponent implements OnInit {
 
-  constructor() { }
+
+  properties: Property[];
+  showAllProducts:boolean=true;
+
+  // @Input() imageSource;
+  // @Input() description;
+  // @Input() title;
+  // @Input() price;
+
+  constructor() { this.properties=PROPERTIES }
 
   ngOnInit(): void {
   }
