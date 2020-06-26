@@ -8,6 +8,7 @@ import { PropertyComponent } from './property/property.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ResidentialComponent } from './residential/residential.component';
 import { InvestmentComponent } from './investment/investment.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { InvestmentComponent } from './investment/investment.component';
     PropertyComponent,
     NavbarComponent,
     ResidentialComponent,
-    InvestmentComponent
+    InvestmentComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

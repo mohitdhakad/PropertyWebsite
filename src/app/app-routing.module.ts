@@ -5,6 +5,7 @@ import { PropertyComponent } from './property/property.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ResidentialComponent } from './residential/residential.component';
 import { InvestmentComponent } from './investment/investment.component';
+import { AboutComponent } from './about/about.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path:"property",component:PropertyComponent},
   {path:"navbar",component:NavbarComponent},
   {path:"residential",component:ResidentialComponent},
-  {path:"investment",component:InvestmentComponent}
+  {path:"investment",component:InvestmentComponent},
+  {path:"about",component:AboutComponent}
 ];
 
 @NgModule({
