@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "urban-home"
+    }
+  },
+  "defaultProject": "urban-home",
+  "cli": {
+    "analytics": "3f973ad8-2fc7-414e-b145-38b924a60ba1"
+  }
 }
