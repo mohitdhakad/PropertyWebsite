@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Property,PropertyTypes } from '../models/property.model';
+import { PROPERTIES } from '../services/mock-property';
 
 @Component({
   selector: 'app-residential',
@@ -6,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./residential.component.scss']
 })
 export class ResidentialComponent implements OnInit {
+  properties: Property[];
+ 
+  
+ 
+  constructor() {
 
-  constructor() { }
+    
+    this.properties = PROPERTIES.filter(property => property.parentPropertyType == PropertyTypes.ResidentialProperty);
+    console.log("doneee")
+  }
 
   ngOnInit(): void {
   }

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Property } from '../property/models/index';
-import { PROPERTIES } from './services/mock-property';
+import { Property } from '../models/index';
+import { PROPERTIES } from '../services/mock-property';
 
 @Component({
   selector: 'app-property',
@@ -9,7 +9,7 @@ import { PROPERTIES } from './services/mock-property';
 })
 export class PropertyComponent implements OnInit {
   properties: Property[];
-  showAllProducts: boolean = true;
+  
 
   // @Input() imageSource; comment
   // @Input() description;

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Property,PropertyTypes } from '../models/property.model';
+import { PROPERTIES } from '../services/mock-property';
+
 
 @Component({
   selector: 'app-commercial',
@@ -6,8 +9,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./commercial.component.scss']
 })
 export class CommercialComponent implements OnInit {
+  properties: Property[];
 
-  constructor() { }
+
+  constructor() {
+    this.properties = PROPERTIES.filter(property => property.parentPropertyType == PropertyTypes.CommercialProperty);
+   }
 
   ngOnInit(): void {
   }

@@ -1,0 +1,15 @@
+.card {
+    float: left;
+    width: 20rem;
+    margin: 2em 1em;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.noMarginPadding {
+    margin: 0;
+    padding: 0;
+}

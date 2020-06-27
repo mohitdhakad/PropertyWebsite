@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Property,PropertyTypes } from '../models/property.model';
+import { PROPERTIES } from '../services/mock-property';
 
 @Component({
   selector: 'app-investment',
@@ -6,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./investment.component.scss']
 })
 export class InvestmentComponent implements OnInit {
+  properties: Property[];
 
-  constructor() { }
+
+  constructor() {
+    this.properties = PROPERTIES.filter(property => property.parentPropertyType == PropertyTypes.InvestmentProperty);
+   }
 
   ngOnInit(): void {
   }

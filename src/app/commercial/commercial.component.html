@@ -1,11 +1,15 @@
-<div class="container">
-    <div class="card" style="width: 20rem;">
-        <img src="assets/home2.jpg" class="card-img-top" alt="...">
+<div class="container ">
+  <div  class="row " style="width: 100%;">
+    <div class="col ">
+      <div class="card " *ngFor="let property of properties">
+        <img [src]="property.imgSrc" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">best for shop</h5>
-          <p class="card-text">price:5-50 lakh.</p>
-          <p class="card-text">In main location</p>
-          <a href="#" class="btn btn-info">See Details</a>
+          <h5 class="card-title">{{property.title}}</h5>
+          <p class="card-text">{{property.description}}</p>
+          <p class="card-text " style="font-weight: bold;">Price: {{ property.price }}</p>
+          <a href="#" class="btn btn-info">See Detail</a>
         </div>
-    </div> 
+      </div>
+    </div>
+  </div>
 </div>
