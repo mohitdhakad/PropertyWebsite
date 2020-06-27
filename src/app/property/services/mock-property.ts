@@ -6,10 +6,10 @@ export var PROPERTIES: Property[] = [
 
     {
     
-        title: 'Commercial',
-        description: 'This house is ready to shift and  it contains 2 room and 1 hall.',
+        title: 'Commercial property',
+        description: 'In main location.',
         imgSrc: 'assets/home1.jpg',
-        price:'8-10 lakh',
+        price:'5-50 lakh',
         
     },
     {
@@ -32,8 +32,17 @@ export var PROPERTIES: Property[] = [
     
         title: 'Residential Property',
         description: 'This house is ready to shift and  it contains 2 room and 1 hall.',
-        imgSrc: 'assets/home1.jpg',
+        imgSrc: 'assets/home2.jpg',
         price:'8-10 lakh',
+        
+    },
+
+    {
+    
+        title: 'investment Property',
+        description: 'This house is ready to shift and  it contains 2 room and 1 hall.',
+        imgSrc: 'assets/home2.jpg',
+        price:'7-10 lakh',
         
     },
 ]

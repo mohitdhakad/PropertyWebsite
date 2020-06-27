@@ -5,16 +5,10 @@
     <div class="card "  *ngFor="let property of properties"  >
         <img [src]="property.imgSrc" class="card-img-top" alt="...">
         <div class="card-body">
-<<<<<<< HEAD
-          <h5 class="card-title">Girl with the cap</h5>
-          <p class="card-text">this is a girl with the nike cap with a gud fabric.</p>
-          <a href="#" class="btn btn-primary">See details</a>
-=======
           <h5 class="card-title">{{property.title}}</h5>
           <p class="card-text">{{property.description}}</p>
           <p class="card-text " style="font-weight: bold;">Price: {{ property.price }}</p>
-          <a href="#" class="btn btn-dark">Go somewhere</a>
->>>>>>> 82fe31518ab312fb657f12b4b9ceb1cde5b3b9e9
+          <a href="#" class="btn btn-info">See Detail</a>
         </div>
     </div> 
 </div>

@@ -6,6 +6,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ResidentialComponent } from './residential/residential.component';
 import { InvestmentComponent } from './investment/investment.component';
 import { AboutComponent } from './about/about.component';
+import { CommercialComponent } from './commercial/commercial.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path:"navbar",component:NavbarComponent},
   {path:"residential",component:ResidentialComponent},
   {path:"investment",component:InvestmentComponent},
-  {path:"about",component:AboutComponent}
+  {path:"about",component:AboutComponent},
+  {path:"commercial",component:CommercialComponent}
 ];
 
 @NgModule({
