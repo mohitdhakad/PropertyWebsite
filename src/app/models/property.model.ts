@@ -15,8 +15,11 @@ export interface PropertyPage {
 
 export enum PropertyTypes {
   CommercialProperty,
+  CommercialShops,
+  CommercialPlot,
   ResidentialProperty,
   ResidentialFlat,
   ResidntialHome,
-  InvestmentProperty
+  InvestmentProperty,
+  InvestmentLand,
 }

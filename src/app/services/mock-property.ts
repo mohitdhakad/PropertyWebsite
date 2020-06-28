@@ -44,7 +44,65 @@ export var PropertyPages: PropertyPage[] = [
         ]
       }
     ]
-  }
+    
+  },
+  {
+    pageTitle: 'Commercial',
+    pagePropertyType: PropertyTypes.CommercialProperty,
+    children: [
+      {
+        childTitle: 'Shops',
+        childProperties: [
+          {
+            title: 'Commercial Shop Property',
+            description:
+              'This house is ready to shift and  it contains 2 room and 1 hall.',
+            imgSrc: 'assets/home1.jpg',
+            price: '8-10 lakh',
+            propertyType: PropertyTypes.CommercialShops
+          },
+        ]
+      },
+      {
+        childTitle: 'Plots',
+        childProperties: [
+          {
+            title: 'Commercial Plots',
+            description:
+              'This house is ready to shift and  it contains 2 room and 1 hall.',
+            imgSrc: 'assets/home2.jpg',
+            price: '8-10 lakh',
+            propertyType: PropertyTypes.CommercialPlot
+          }
+        ]
+      }
+    ]
+    
+  },
+
+  {
+    pageTitle:'Investment',
+    pagePropertyType: PropertyTypes.InvestmentProperty,
+    children: [
+      {
+        childTitle: 'Land',
+        childProperties: [
+          {
+            title: 'Major and Minor Lands',
+            description:
+              'This house is ready to shift and  it contains 2 room and 1 hall.',
+            imgSrc: 'assets/home1.jpg',
+            price: '8-10 lakh',
+            propertyType: PropertyTypes.InvestmentLand
+          },
+        ]
+      },
+     
+    ]
+    
+  },
+  
+
 ];
 
 // export var PROPERTIES: Property[] = [

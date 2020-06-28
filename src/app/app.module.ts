@@ -10,6 +10,7 @@ import { ResidentialComponent } from './residential/residential.component';
 import { InvestmentComponent } from './investment/investment.component';
 import { AboutComponent } from './about/about.component';
 import { CommercialComponent } from './commercial/commercial.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CommercialComponent } from './commercial/commercial.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
