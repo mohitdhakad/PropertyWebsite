@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Property } from '../models/index';
-import { PROPERTIES } from '../services/mock-property';
+import { PropertyPages } from '../services/mock-property';
 
 @Component({
   selector: 'app-property',
@@ -9,7 +9,6 @@ import { PROPERTIES } from '../services/mock-property';
 })
 export class PropertyComponent implements OnInit {
   properties: Property[];
-  
 
   // @Input() imageSource; comment
   // @Input() description;
@@ -17,7 +16,7 @@ export class PropertyComponent implements OnInit {
   // @Input() price;
 
   constructor() {
-    this.properties = PROPERTIES;
+    // this.properties = PROPERTIES;
   }
 
   ngOnInit(): void {}

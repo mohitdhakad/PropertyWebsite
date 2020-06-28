@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Property,PropertyTypes } from '../models/property.model';
-import { PROPERTIES } from '../services/mock-property';
+import {
+  Property,
+  PropertyTypes,
+  PropertyPage
+} from '../models/property.model';
+import { PropertyPages } from '../services/mock-property';
 
 @Component({
   selector: 'app-residential',
@@ -8,18 +12,15 @@ import { PROPERTIES } from '../services/mock-property';
   styleUrls: ['./residential.component.scss']
 })
 export class ResidentialComponent implements OnInit {
-  properties: Property[];
- 
-  
- 
+  propertyPage: PropertyPage;
+
   constructor() {
+    this.propertyPage = PropertyPages.filter(
+      property => property.pagePropertyType == PropertyTypes.ResidentialProperty
+    )[0];
 
-    
-    this.properties = PROPERTIES.filter(property => property.parentPropertyType == PropertyTypes.ResidentialProperty);
-    console.log("doneee")
+    console.log('doneee');
   }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

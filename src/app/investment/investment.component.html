@@ -1,4 +1,5 @@
 <div class="container ">
+<<<<<<< HEAD
   <div  class="row " style="width: 100%;">
     <div class="col ">
       <div class="card " *ngFor="let property of properties">
@@ -16,3 +17,43 @@
 
 
 
+||||||| merged common ancestors
+  <div  class="row " style="width: 100%;">
+    <div class="col ">
+      <div class="card " *ngFor="let property of properties">
+        <img [src]="property.imgSrc" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{property.title}}</h5>
+          <p class="card-text">{{property.description}}</p>
+          <p class="card-text " style="font-weight: bold;">Price: {{ property.price }}</p>
+          <a href="#" class="btn btn-info">See Detail</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+=======
+  <ul ngbNav #nav="ngbNav" class="nav-tabs nav nav-pills nav-fill"
+      style="margin-bottom: 3em; margin-top: 2em;" keyboard="changeWithArrows">
+      <li ngbNavItem *ngFor="let childProps of propertyPage.children">
+          <a ngbNavLink>{{childProps.childTitle}}</a>
+          <ng-template ngbNavContent>
+
+              <div class="row text-center">
+                <div class="card " *ngFor="let property of childProps.childProperties">
+                  <img [src]="property.imgSrc" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">{{property.title}}</h5>
+                    <p class="card-text">{{property.description}}</p>
+                    <p class="card-text " style="font-weight: bold;">Price: {{ property.price }}</p>
+                    <a href="#" class="btn btn-info">See Detail</a>
+                  </div>
+                </div>
+              </div>
+
+          </ng-template>
+      </li>
+
+  </ul>
+  <div [ngbNavOutlet]="nav"></div>
+>>>>>>> 862d269ec901673e7737b990c1ba12d75796331b
