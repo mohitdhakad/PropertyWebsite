@@ -1,7 +1,7 @@
 <div class="container ">
-  <div  class="row " style="width: 100%;">
-    <div class="col ">
-      <div class="card " *ngFor="let property of properties">
+  <div class="row" *ngFor="let childProps of propertyPage.children" style="width: 100%;">
+    <div class="col">
+      <div class="card " *ngFor="let property of childProps.childProperties">
         <img [src]="property.imgSrc" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{property.title}}</h5>
@@ -13,6 +13,3 @@
     </div>
   </div>
 </div>
-
-
-

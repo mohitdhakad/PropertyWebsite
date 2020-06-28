@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Property,PropertyTypes } from '../models/property.model';
-import { PROPERTIES } from '../services/mock-property';
+import { Property, PropertyTypes } from '../models/property.model';
+import { PropertyPages } from '../services/mock-property';
 
 @Component({
   selector: 'app-investment',
@@ -10,12 +10,9 @@ import { PROPERTIES } from '../services/mock-property';
 export class InvestmentComponent implements OnInit {
   properties: Property[];
 
-
   constructor() {
-    this.properties = PROPERTIES.filter(property => property.parentPropertyType == PropertyTypes.InvestmentProperty);
-   }
-
-  ngOnInit(): void {
+    // this.properties = PROPERTIES.filter(property => property.parentPropertyType == PropertyTypes.InvestmentProperty);
   }
 
+  ngOnInit(): void {}
 }
