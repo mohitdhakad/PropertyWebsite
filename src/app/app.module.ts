@@ -11,6 +11,7 @@ import { InvestmentComponent } from './investment/investment.component';
 import { AboutComponent } from './about/about.component';
 import { CommercialComponent } from './commercial/commercial.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ResidentialComponent,
     InvestmentComponent,
     AboutComponent,
-    CommercialComponent
+    CommercialComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

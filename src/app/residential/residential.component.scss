@@ -21,3 +21,17 @@
 .btn {
     background-color:  rgb(67, 158, 161);
   }
+
+.nav-pills  > li > a,.nav-pills > li > a > .nav-link{
+  background-color:  #ffffff;
+  color:#569e98;
+  border:solid #569e98 1px;
+
+}
+.nav-pills  > li > a:hover,.nav-pills > li > a.active , .nav-pills > li > a.active > .nav-link{
+  background-color:  #569e98;
+  color:#ffffff;
+
+}
+
+

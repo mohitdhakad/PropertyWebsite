@@ -14,29 +14,6 @@ export interface PropertyPage {
 }
 
 export enum PropertyTypes {
-<<<<<<< HEAD
-
-CommercialProperty,
-CommercialPlot,
-ResidentialProperty,
-ResidentialFlat,
-ResidntialHome,
-ResidentialPlot,
-InvestmentProperty,
-InvestmentLand,
-
-
-}
-||||||| merged common ancestors
-
-CommercialProperty,
-ResidentialProperty,
-ResidentialFlat,
-ResidntialHome,
-InvestmentProperty,
-
-}
-=======
   CommercialProperty,
   CommercialShops,
   CommercialPlot,
@@ -46,4 +23,3 @@ InvestmentProperty,
   InvestmentProperty,
   InvestmentLand,
 }
->>>>>>> 862d269ec901673e7737b990c1ba12d75796331b
