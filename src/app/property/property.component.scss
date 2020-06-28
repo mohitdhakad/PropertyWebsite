@@ -1,8 +1,12 @@
 .card {
     float: left;
     width: 20rem;
+    min-height: 700px;
     margin: 2em 1em;
 }
+.card:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
 .row::after {
     content: "";
     clear: both;
@@ -13,3 +17,7 @@
     margin: 0;
     padding: 0;
 }
+
+.btn {
+    background-color:  rgb(67, 158, 161);
+  }
