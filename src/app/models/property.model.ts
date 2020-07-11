@@ -1,9 +1,14 @@
 export interface Property {
+  id: number;
   title: string;
   imgSrc: string;
   description: string;
   price: string;
   propertyType: PropertyTypes;
+  area?: string;
+  size?: string;
+  location?: string;
+
   //   children?: Property[];
 }
 
@@ -21,5 +26,5 @@ export enum PropertyTypes {
   ResidentialFlat,
   ResidntialHome,
   InvestmentProperty,
-  InvestmentLand,
+  InvestmentLand
 }

@@ -1,33 +1,35 @@
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  font-family: Arial;
-  font-size: 18px;
-}
+    body {
+      font-family: Arial;
+      font-size: 18px;
+    }
 
-
-</style>
+  </style>
 </head>
+
 <body>
 
-<div class="container">
-  <img src="assets/home1.jpg" alt="Notebook" style="width:100%;">
-  <div class="content">
-    <h1>Single floor house</h1>
-    <p>Ready to shift house.</p>
-    <p>Price:7-12 lac onwards
-    </p>
-    <p>Area:70 gaj</p>
-    <p>size:15 by 30</p>
-    <p>Location:Muhana</p>
+  <div class="container">
+    <img [src]="property.imgSrc" alt="Notebook" style="width:100%;">
+    <div class="content">
+      <h1>{{property.title}}</h1>
+      <p>{{property.description}}</p>
+      <p>Price:{{property.price}}
+      </p>
+      <p>Area:{{property.area}}</p>
+      <p>size:{{property.size}}</p>
+      <p>Location:{{property.location}}</p>
+    </div>
   </div>
-</div>
 
 </body>
+
 </html>

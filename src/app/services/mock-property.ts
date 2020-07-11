@@ -13,14 +13,20 @@ export var PropertyPages: PropertyPage[] = [
         childTitle: 'Home property',
         childProperties: [
           {
+            id: 1,
             title: 'Residential Home Property',
             description:
               'This house is ready to shift and  it contains 2 room and 1 hall.',
             imgSrc: 'assets/home1.jpg',
             price: '8-10 lakh',
-            propertyType: PropertyTypes.ResidntialHome
+            propertyType: PropertyTypes.ResidntialHome,
+
+            area: '70 gaj',
+            size: '15 by 30',
+            location: 'Muhana'
           },
           {
+            id: 2,
             title: 'Residential Home Property',
             description:
               'This house is ready to shift and  it contains 2 room and 1 hall.',
@@ -34,6 +40,7 @@ export var PropertyPages: PropertyPage[] = [
         childTitle: 'Flat Property',
         childProperties: [
           {
+            id: 3,
             title: 'Residential Flat Property',
             description:
               'This house is ready to shift and  it contains 2 room and 1 hall.',
@@ -44,7 +51,6 @@ export var PropertyPages: PropertyPage[] = [
         ]
       }
     ]
-    
   },
   {
     pageTitle: 'Commercial',
@@ -54,19 +60,21 @@ export var PropertyPages: PropertyPage[] = [
         childTitle: 'Shops',
         childProperties: [
           {
+            id: 4,
             title: 'Commercial Shop Property',
             description:
               'This house is ready to shift and  it contains 2 room and 1 hall.',
             imgSrc: 'assets/home1.jpg',
             price: '8-10 lakh',
             propertyType: PropertyTypes.CommercialShops
-          },
+          }
         ]
       },
       {
         childTitle: 'Plots',
         childProperties: [
           {
+            id: 5,
             title: 'Commercial Plots',
             description:
               'This house is ready to shift and  it contains 2 room and 1 hall.',
@@ -77,32 +85,28 @@ export var PropertyPages: PropertyPage[] = [
         ]
       }
     ]
-    
   },
 
   {
-    pageTitle:'Investment',
+    pageTitle: 'Investment',
     pagePropertyType: PropertyTypes.InvestmentProperty,
     children: [
       {
         childTitle: 'Land',
         childProperties: [
           {
+            id: 6,
             title: 'Major and Minor Lands',
             description:
               'This house is ready to shift and  it contains 2 room and 1 hall.',
             imgSrc: 'assets/home1.jpg',
             price: '8-10 lakh',
             propertyType: PropertyTypes.InvestmentLand
-          },
+          }
         ]
-      },
-     
+      }
     ]
-    
-  },
-  
-
+  }
 ];
 
 // export var PROPERTIES: Property[] = [

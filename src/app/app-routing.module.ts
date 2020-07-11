@@ -10,21 +10,20 @@ import { CommercialComponent } from './commercial/commercial.component';
 import { FooterComponent } from './footer/footer.component';
 import { ViewComponent } from './view/view.component';
 
-
 const routes: Routes = [
-  {path:"",component:HomeComponent},
-  {path:"property",component:PropertyComponent},
-  {path:"navbar",component:NavbarComponent},
-  {path:"residential",component:ResidentialComponent},
-  {path:"investment",component:InvestmentComponent},
-  {path:"about",component:AboutComponent},
-  {path:"commercial",component:CommercialComponent},
-  {path:"footer",component:FooterComponent},
-  {path:"view",component:ViewComponent}
+  { path: '', component: HomeComponent },
+  { path: 'property', component: PropertyComponent },
+  { path: 'navbar', component: NavbarComponent },
+  { path: 'residential', component: ResidentialComponent },
+  { path: 'investment', component: InvestmentComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'commercial', component: CommercialComponent },
+  { path: 'footer', component: FooterComponent },
+  { path: 'view/:id', component: ViewComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
