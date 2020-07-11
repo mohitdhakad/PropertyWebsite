@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { CommercialComponent } from './commercial/commercial.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
+import { ViewComponent } from './view/view.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     InvestmentComponent,
     AboutComponent,
     CommercialComponent,
-    FooterComponent
+    FooterComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,
