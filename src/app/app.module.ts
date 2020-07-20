@@ -13,6 +13,7 @@ import { CommercialComponent } from './commercial/commercial.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { ViewComponent } from './view/view.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ViewComponent } from './view/view.component';
     AboutComponent,
     CommercialComponent,
     FooterComponent,
-    ViewComponent
+    ViewComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { CommercialComponent } from './commercial/commercial.component';
 import { FooterComponent } from './footer/footer.component';
 import { ViewComponent } from './view/view.component';
+import { FormComponent } from './form/form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'commercial', component: CommercialComponent },
   { path: 'footer', component: FooterComponent },
-  { path: 'view/:id', component: ViewComponent }
+  { path: 'view/:id', component: ViewComponent },
+  { path: 'form', component: FormComponent }
 ];
 
 @NgModule({
